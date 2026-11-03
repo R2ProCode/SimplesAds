@@ -15,7 +15,7 @@ namespace HW_260323_SimpleAds.Web.Controllers
 
             var vm = new AdsSessionViewModel
             {
-                DeleteAdIds = HttpContext.Session.Get<List<int>>("asvm"),
+                DeleteAdIds = HttpContext.Session.Get<List<int>>("ids-list"),
                 Ads = adRepository.GetAllAds()
             };
 
@@ -34,7 +34,7 @@ namespace HW_260323_SimpleAds.Web.Controllers
             ad.DateCreated = DateTime.Now;
             ad.Id = adRepository.AddAd(ad);
 
-            List<int> deleteAdIds = HttpContext.Session.Get<List<int>>("asvm");
+            List<int> deleteAdIds = HttpContext.Session.Get<List<int>>("ids-list");
 
             if (deleteAdIds == null)
             {
@@ -43,7 +43,7 @@ namespace HW_260323_SimpleAds.Web.Controllers
 
             deleteAdIds.Add(ad.Id);
 
-            HttpContext.Session.Set("asvm", deleteAdIds);
+            HttpContext.Session.Set("ids-list", deleteAdIds);
             return Redirect($"/homesession/index");
         }
 
