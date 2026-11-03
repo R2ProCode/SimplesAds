@@ -1,0 +1,53 @@
+﻿@using HW_260323_SimpleAds.Web.Models
+@model AdsCookiesViewModel
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+            @foreach (var ad in Model.Ads)
+            {
+                <div class="ad-card">
+
+                    <div class="ad-badge">
+                        FREE ITEM
+                    </div>
+
+                    <h3 class="ad-name">
+                        @(string.IsNullOrWhiteSpace(ad.Name)
+                            ? "Anonymous Neighbor"
+                            : ad.Name)
+                    </h3>
+
+                    <div class="ad-date">
+                        Listed on @ad.DateCreated.ToLongDateString()
+                    </div>
+
+                    <div class="ad-phone">
+                        📞 @ad.PhoneNumber
+                    </div>
+
+                    <div class="ad-details-title">
+                        Details
+                    </div>
+
+                    <p class="ad-description">
+                        @ad.Description
+                    </p>
+
+					@if (Model.DeleteAdIds != null && Model.DeleteAdIds.Split(',').Contains(ad.Id.ToString()))
+                    {
+                        <form method="post" action="/homesession/deletead">
+                            <input type="hidden" name="id" value="@ad.Id" />
+                            <button type="submit" class="ad-delete-btn">
+                                🗑 Delete Ad
+                            </button>
+                        </form>
+                    }
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

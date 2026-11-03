@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HW_260323 SimpleAds.Data/HW_260323 SimpleAds.Data.csproj" />
+  <Project Path="HW_260323 SimpleAds.Web/HW_260323 SimpleAds.Web.csproj" />
+</Solution>

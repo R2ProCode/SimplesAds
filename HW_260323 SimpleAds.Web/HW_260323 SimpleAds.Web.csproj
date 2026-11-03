@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>HW_260323_SimpleAds.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HW_260323 SimpleAds.Data\HW_260323 SimpleAds.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,234 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.ad-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+    .ad-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+        border-color: #0d6efd;
+    }
+
+.ad-badge {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+
+.ad-name {
+    color: #0d6efd;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.ad-date {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.ad-phone {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ad-details-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.ad-description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .ad-card {
+        padding: 18px;
+    }
+
+    .ad-name {
+        font-size: 1.2rem;
+    }
+
+    .ad-description {
+        font-size: .95rem;
+    }
+}
+
+.ad-form-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .08);
+    transition: all .3s ease;
+}
+
+    .ad-form-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+    }
+
+.ad-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0d6efd;
+}
+
+.ad-input,
+.ad-textarea {
+    border-radius: 12px;
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    transition: all .25s ease;
+}
+
+    .ad-input:focus,
+    .ad-textarea:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, .15);
+    }
+
+.ad-submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: #0d6efd;
+    color: white;
+    transition: all .3s ease;
+}
+
+    .ad-submit-btn:hover {
+        background: #0b5ed7;
+        transform: translateY(-2px);
+    }
+.ad-submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: #0d6efd;
+    color: white;
+    transition: all .3s ease;
+}
+
+    .ad-submit-btn:hover:not(:disabled) {
+        background: #0b5ed7;
+        transform: translateY(-2px);
+    }
+
+    .ad-submit-btn:disabled {
+        background: #adb5bd;
+        color: #f8f9fa;
+        cursor: not-allowed;
+        opacity: .8;
+        transform: none;
+        box-shadow: none;
+    }
+
+.ad-delete-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+    .ad-delete-btn:hover {
+        background: #bb2d3b;
+        color: white;
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(220, 53, 69, .3);
+    }
+
+    .ad-delete-btn:active {
+        transform: translateY(0);
+    }
+
+.ad-delete-btn {
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 10px 18px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.ad-delete-btn {
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 10px 18px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
